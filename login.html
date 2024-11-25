@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area do Personal Trainer</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        header, footer { background: #333; color: white; text-align: center; padding: 15px; }
+        .container { display: flex; justify-content: space-around; align-items: flex-start; padding: 50px; }
+        .form-container { max-width: 400px; width: 100%; padding: 20px; border: 1px solid #ddd; border-radius: 5px; }
+        input, button { width: 100%; padding: 10px; margin-bottom: 10px; border: 1px solid #ddd; border-radius: 5px; }
+        button { background-color: #333; color: white; cursor: pointer; }
+        button:hover { background-color: #555; }
+        .link-cadastro { text-align: center; margin-top: 10px; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Personal Trainer - Login / Cadastro</h1>
+    </header>
+    <div class="container">
+        <!-- Login Section -->
+        <div class="form-container">
+            <h2>Login</h2>
+            <form action="dashboard.html" method="POST">
+                <input type="text" name="username" placeholder="Usuário" required>
+                <input type="password" name="password" placeholder="Senha" required>
+                <button type="submit">Entrar</button>
+            </form>
+        </div>
+
+        <!-- Cadastro Section -->
+        <div class="form-container">
+            <h2>Cadastro</h2>
+            <p>Não tem uma conta? Cadastre-se agora!</p>
+            <form action="cadastro.php" method="GET">
+                <button type="submit">Ir para Cadastro</button>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <p>© 2024 Seu Personal Trainer</p>
+    </footer>
+</body>
+</html>
+
